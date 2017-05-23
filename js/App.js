@@ -1,10 +1,16 @@
+// Kodilla Task 12.7
+
+// identyfikacja uzytkownika ----------------------------------
+
+var myID = prompt('Wpisz proszę API Kanban ID:', '0000');
+var myIDstring = myID.toString();
 
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
-  'X-Client-Id': '1822',
+  'X-Client-Id': myIDstring,
   'X-Auth-Token': '6356cb8a38a3613d2b1f69a3815415f9'
 };
-// Kodilla Task 12.7
+// ------------------------------------------------------------
 
 $.ajaxSetup({
   headers: myHeaders
